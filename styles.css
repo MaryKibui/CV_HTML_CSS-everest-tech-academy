@@ -1,80 +1,85 @@
- Reset default styles for all elements
-For each element in the document:
-    Set margin to 0
-    Set padding to 0
-    Set box-sizing to border-box
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
 
-// Apply basic styling to the body
-Set font-family to "Arial, sans-serif"
-Set line-height to 1.6
+ body{
+    font-size: Arial, sans-serif;
+    line-height: 1.6;
+ }
+header {
+    background: #333;
+    color: white;
+    padding: 1em;
+}
+img {
+    border-radius: 50px;
+    position: left;
+}
+nav {
+    list-style: none;
+    display: flex;
+}
 
-// Apply styling to the header
-header:
-    Set background-color to #333
-    Set color to white
-    Set padding to 1em
-//Apply settings for About me image header
- border-radius to 50px
- postion to left
-// Apply styling to the navigation
-nav:
-    Set list-style to none
-    Set display to flex
+nav li {
+    margin-right: 20px;
+}
 
-// Apply styling to navigation list items
-nav li:
-    Set margin-right to 20px
+nav a {
+    text-decoration:none ;
+    color: white;
+}
 
-// Apply styling to navigation anchor tags
-nav a:
-    Set text-decoration to none
-    Set color to white
+section {
+    margin: 2em;
+}
 
-// Apply styling to sections
-section:
-    Set margin to 2em
+h2 {
+    margin-bottom: 1em;
+}
 
-// Apply styling to section headings
-h2:
-    Set margin-bottom to 1em
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
 
-// Apply styling to the footer
-footer:
-    Set background-color to #333
-    Set color to white
-    Set text-align to center
-    Set padding to 1em
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
 
-// Apply styling to the skills list
-.skills-list:
-    Set list-style to none
-    Set padding to 0
+.skills-list li {
+    margin-bottom: 1em;
+}
 
-// Apply styling to skill list items
-.skills-list li:
-    Set margin-bottom to 1em
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    display: block;
+}
 
-// Apply styling to skill names
-.skill-name:
-    Set font-weight to bold
-    Set margin-bottom to 0.5em
-    Set display to block
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
-// Apply styling to skill bars
-.skill-bar:
-    Set width to 100%
-    Set height to 10px
-    Set background-color to #ddd
-    Set border-radius to 5px
-    Set overflow to hidden
+.skill-level {
+    height: 100%;
+    background-color: #4caf50;
+}
 
-// Apply styling to skill levels
-.skill-level:
-    Set height to 100%
-    Set background-color to #4caf50
-
-// Apply media query for responsiveness
-@media (max-width: 600px):
-    Change navigation list direction to column
-    Change navigation list item margin-right to 0
-    Change navigation list item margin-bottom to 10px
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
